@@ -159,7 +159,7 @@ At each step requiring approval, the AI will ask before advancing.
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone git@github.com:felipecarvalho/ios-builder-mcp.git
 cd ios-builder-mcp
 npm install
 npm run build
