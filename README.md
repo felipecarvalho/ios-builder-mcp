@@ -165,11 +165,31 @@ npm install
 npm run build
 ```
 
+### AI Assistant Prompt
+
+Paste this prompt into any AI coding assistant to clone, build, and configure the MCP server:
+
+```markdown
+Clone and configure the iOS Builder MCP server:
+1. `git clone git@github.com:felipecarvalho/ios-builder-mcp.git`
+2. `cd ios-builder-mcp && npm install && npm run build`
+3. Register it in my MCP client config (stdio, node dist/index.js)
+```
+
 ## Configuration
 
 ### MCP Client
 
-Add to your MCP client configuration (OpenCode, Claude Desktop, Cursor, etc.):
+Paste this into your AI assistant to register the MCP server on any platform:
+
+```markdown
+Register the iOS Builder MCP server in my MCP client configuration. 
+The server runs on stdio transport at: node /path/to/ios-builder-mcp/dist/index.js
+Set IOS_BUILDER_PROJECT_ROOT to my project directory.
+Use the correct config format for my platform (OpenCode, Claude Code, Cursor, etc.).
+```
+
+Or manually add this JSON to your MCP client config:
 
 ```json
 {
@@ -183,21 +203,6 @@ Add to your MCP client configuration (OpenCode, Claude Desktop, Cursor, etc.):
     }
   }
 }
-```
-
-### AI Assistant Prompt
-
-Paste this prompt into any AI coding assistant to automatically configure the iOS Builder MCP:
-
-```markdown
-Configure the iOS Builder MCP server on your platform. Here are the details:
-
-- **Repo**: git@github.com:felipecarvalho/ios-builder-mcp.git
-- **Install**: clone the repo, run `npm install && npm run build`
-- **Command**: node /path/to/ios-builder-mcp/dist/index.js
-- **Transport**: stdio
-
-Use the appropriate method for your platform (OpenCode, Claude Code, Cursor, etc.) to register this server.
 ```
 
 ### Environment Variables
