@@ -185,6 +185,21 @@ Add to your MCP client configuration (OpenCode, Claude Desktop, Cursor, etc.):
 }
 ```
 
+### AI Assistant Prompt
+
+Paste this prompt into any AI coding assistant to automatically configure the iOS Builder MCP:
+
+```markdown
+Configure the iOS Builder MCP server on your platform. Here are the details:
+
+- **Repo**: git@github.com:felipecarvalho/ios-builder-mcp.git
+- **Install**: clone the repo, run `npm install && npm run build`
+- **Command**: node /path/to/ios-builder-mcp/dist/index.js
+- **Transport**: stdio
+
+Use the appropriate method for your platform (OpenCode, Claude Code, Cursor, etc.) to register this server.
+```
+
 ### Environment Variables
 
 | Variable | Required | Description |
