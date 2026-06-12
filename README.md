@@ -158,22 +158,21 @@ At each step requiring approval, the AI will ask before advancing.
 
 ## Installation
 
+Paste this into your AI assistant to install iOS Builder MCP:
+
+```markdown
+Clone and build the iOS Builder MCP:
+1. `git clone git@github.com:felipecarvalho/ios-builder-mcp.git`
+2. `cd ios-builder-mcp && npm install && npm run build`
+```
+
+Or manually:
+
 ```bash
 git clone git@github.com:felipecarvalho/ios-builder-mcp.git
 cd ios-builder-mcp
 npm install
 npm run build
-```
-
-### AI Assistant Prompt
-
-Paste this prompt into any AI coding assistant to clone, build, and configure the MCP server:
-
-```markdown
-Clone and configure the iOS Builder MCP server:
-1. `git clone git@github.com:felipecarvalho/ios-builder-mcp.git`
-2. `cd ios-builder-mcp && npm install && npm run build`
-3. Register it in my MCP client config (stdio, node dist/index.js)
 ```
 
 ## Configuration
